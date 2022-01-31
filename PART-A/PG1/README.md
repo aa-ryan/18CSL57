@@ -6,3 +6,4 @@
 2. vi lab1.awk 
 3. ns lab1.tcl
 4. awk -f lab1.awk lab1.tr
+5. vi lab1.tr # Reading trace file
