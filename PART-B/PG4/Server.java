@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.net.*;
 
-public class UDPS
+public class Server
 {
 	public static void main(String[] args)
 	{
