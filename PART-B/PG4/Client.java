@@ -24,7 +24,7 @@ public class Client
 			DatagramPacket reply = new DatagramPacket(buffer,buffer.length); 
 			skt.receive(reply);
 
-			System.out.println("Client received:" + new String(reply.getData())); 
+			System.out.println("Client received: " + new String(reply.getData())); 
 			skt.close();
 
 		}

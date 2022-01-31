@@ -27,6 +27,7 @@ public class Server
 				byte[] sendMsg = (ch + " <- Server processed").getBytes(); 
 				DatagramPacket reply = new DatagramPacket(sendMsg, sendMsg.length, request.getAddress(), request.getPort());
 				skt.send(reply);
+				skt.close();
 			}
 		}
 
