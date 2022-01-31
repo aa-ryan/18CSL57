@@ -21,10 +21,10 @@ public class Server
 				DatagramPacket request = new DatagramPacket(buffer,buffer.length); 
 				skt.receive(request);
 
-				System.out.print("Enter the data"); 
-				ch=input.nextLine();
+				System.out.print("Enter the data: "); 
+				ch = input.nextLine();
 
-				byte[] sendMsg = (ch + " Server processed").getBytes(); 
+				byte[] sendMsg = (ch + " <- Server processed").getBytes(); 
 				DatagramPacket reply = new DatagramPacket(sendMsg, sendMsg.length, request.getAddress(), request.getPort());
 				skt.send(reply);
 			}
@@ -32,6 +32,7 @@ public class Server
 
 		catch(Exception ex) {}
 
+		input.close();
 	}
 }
 

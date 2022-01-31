@@ -15,7 +15,7 @@ public class Client
 			byte[] b = msg.getBytes();
 
 			InetAddress host = InetAddress.getByName("127.0.0.1"); 
-			int  serverSocket=6788;
+			int  serverSocket = 6788;
 
 			DatagramPacket request = new DatagramPacket(b,b.length,host,serverSocket); 
 			skt.send(request);
