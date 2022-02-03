@@ -41,14 +41,9 @@ public class CRC1 {
 		//Check for input CRC code
 		System.out.print("Enter checksum code: ");
 		message = sc.nextLine();
-		// System.out.print("Enter generator: ");
-		// generator = sc.nextLine();
 		data = new int[message.length() + generator.length() - 1];
-		// divisor = new int[generator.length()];
 		for(int i=0;i<message.length();i++)
 			data[i] = Integer.parseInt(message.charAt(i)+"");
-		// for(int i=0;i<generator.length();i++)
-		// 	divisor[i] = Integer.parseInt(generator.charAt(i)+"");
 
 		//Calculation of remainder
 		for(int i=0;i<message.length();i++) {
