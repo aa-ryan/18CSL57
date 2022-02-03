@@ -51,7 +51,7 @@ public class BellmanFord
 					A[i][j] = MAX_VALUE; 
 			} 
 		System.out.println("Enter the source vertex: "); 
-		s=sc.nextInt(); 
+		s = sc.nextInt(); 
 		BellmanFord b = new BellmanFord(n); 
 		b.shortest(s,A); 
 		sc.close(); 
