@@ -7,7 +7,7 @@ public class RSA
 	{
 		while(n != 0) 
 		{ 
-			int r = m%n; 
+			int r = m % n; 
 			m = n; 
 			n = r; 
 		} 
